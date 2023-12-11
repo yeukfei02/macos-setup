@@ -25,7 +25,7 @@ copyFiles() {
     cp .config/fish/config.fish $HOME/.config/fish
 }
 
-runBrewFile() {
+runBrewfile() {
     cd
     brew bundle install
 }
@@ -42,10 +42,10 @@ main() {
 
         if ["$arg" == "personal"]; then
             copyPersonalFiles
-            runBrewFile
+            runBrewfile
         elif ["$arg" == "company"]; then
             copyCompanyFiles
-            runBrewFile
+            runBrewfile
         fi
     fi
 
