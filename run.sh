@@ -3,6 +3,7 @@
 createDir() {
     cd
     mkdir -p .config/fish
+    mkdir -p .aws
 }
 
 copyPersonalFiles() {
@@ -23,6 +24,8 @@ copyFiles() {
     cp .gitconfig $HOME
 
     cp .config/fish/config.fish $HOME/.config/fish
+
+    cp .aws/* $HOME/.aws
 }
 
 runBrewfile() {
