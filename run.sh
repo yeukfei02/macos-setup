@@ -26,6 +26,7 @@ copyFiles() {
 }
 
 runBrewFile() {
+    cd
     brew bundle install
 }
 
