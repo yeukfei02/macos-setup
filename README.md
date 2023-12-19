@@ -4,23 +4,13 @@ macos setup with Brewfile
 
 personal: macbook pro 14 inch 2021 M1 Pro
 
-company: macbook pro 16 inch 2019 Intel i7
+company: macbook pro 14 inch 2021 M1 Pro
 
 ## Requirement
 
 - install brew
 
 ## Testing and run
-
-git clone this repo into `$HOME` in terminal
-
-```zsh
-// run run.sh for personal macos
-$ ./run.sh personal
-
-// run run.sh for company macos
-$ ./run.sh company
-```
 
 ```zsh
 // create brewfile
