@@ -23,6 +23,9 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/bin:$PATH"
 
+# conda
+export PATH=/opt/homebrew/anaconda3/bin:$PATH
+
 # pyenv
 eval "$(pyenv init -)"
 eval "$(pyenv init --path)"
