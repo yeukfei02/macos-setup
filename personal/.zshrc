@@ -38,6 +38,10 @@ export PATH=$GOPATH/bin:$PATH
 # gvm
 [[ -s "/Users/donaldwu/.gvm/scripts/gvm" ]] && source "/Users/donaldwu/.gvm/scripts/gvm"
 
+# google cloud
+if [ -f '/Users/donaldwu/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/donaldwu/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/donaldwu/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/donaldwu/google-cloud-sdk/completion.zsh.inc'; fi
+
 # z for jumping around
 source $HOME/z.sh
 
