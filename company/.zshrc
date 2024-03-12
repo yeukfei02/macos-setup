@@ -5,7 +5,7 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # homebrew
-export PATH="/usr/local/sbin:$PATH"
+export PATH="/opt/homebrew/sbin:$PATH"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
@@ -14,6 +14,9 @@ export NVM_DIR="$HOME/.nvm"
 
 # rbenv
 eval "$(rbenv init -)"
+
+# pipx
+export PATH="$PATH:/Users/donaldwu/.local/bin"
 
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
@@ -26,9 +29,6 @@ source /Users/yeuk.fei.wu/.gvm/scripts/gvm
 
 # z for jumping around
 source $HOME/z.sh
-
-# gpg
-export GPG_TTY=$(tty)
 
 # alias
 alias cat="bat"
