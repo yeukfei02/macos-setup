@@ -16,7 +16,7 @@ export NVM_DIR="$HOME/.nvm"
 eval "$(rbenv init -)"
 
 # pipx
-export PATH="$PATH:/Users/donaldwu/.local/bin"
+export PATH="$PATH:/Users/yeuk.fei.wu/.local/bin"
 
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
@@ -24,8 +24,20 @@ command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
 
+# java
+export "JAVA_HOME=\$(/usr/libexec/java_home)"
+
+# android
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
 # gvm
 source /Users/yeuk.fei.wu/.gvm/scripts/gvm
+
+# gcloud cli
+if [ -f '/Users/yeuk.fei.wu/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/yeuk.fei.wu/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/yeuk.fei.wu/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/yeuk.fei.wu/google-cloud-sdk/completion.zsh.inc'; fi
 
 # z for jumping around
 source $HOME/z.sh
