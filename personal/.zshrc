@@ -34,6 +34,14 @@ eval "$(pyenv init -)"
 eval "$(pyenv init --path)"
 alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
 
+# java
+export "JAVA_HOME=\$(/usr/libexec/java_home)"
+
+# android
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
 # go
 export GOPATH="$HOME/go"
 export PATH=$GOPATH/bin:$PATH
