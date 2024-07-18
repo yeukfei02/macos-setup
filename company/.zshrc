@@ -44,7 +44,7 @@ source $HOME/z.sh
 
 # alias
 alias cat="bat"
-alias ls="exa"
+alias ls="eza"
 
 # starship
 eval "$(starship init zsh)"
