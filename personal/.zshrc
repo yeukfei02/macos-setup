@@ -19,6 +19,10 @@ export NVM_DIR="$HOME/.nvm"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
+# bum
+export BUM_INSTALL="$HOME/.bum"
+export PATH="$BUM_INSTALL/bin:$PATH"
+
 # rbenv
 eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/bin:$PATH"
