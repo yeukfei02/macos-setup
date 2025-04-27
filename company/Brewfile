@@ -1,13 +1,8 @@
-tap "cloudflare/cloudflare"
 tap "hashicorp/tap"
-tap "homebrew/bundle"
-tap "homebrew/services"
 tap "mongodb/brew"
 brew "awscli"
-brew "libgit2@1.7"
 brew "bat"
 brew "node"
-brew "terraform"
 brew "cdktf"
 brew "deno"
 brew "eza"
@@ -23,6 +18,7 @@ brew "graphviz"
 brew "imagemagick"
 brew "influxdb-cli"
 brew "jq"
+brew "libgit2@1.7"
 brew "mas"
 brew "maven"
 brew "minikube"
@@ -31,6 +27,7 @@ brew "nvm"
 brew "pinentry-mac"
 brew "pipenv"
 brew "pipx"
+brew "pkgconf"
 brew "pyenv"
 brew "rbenv"
 brew "redis"
@@ -49,7 +46,6 @@ cask "wechatwebdevtools"
 mas "1Password 7", id: 1333542190
 mas "Bitwarden", id: 1352778147
 mas "GarageBand", id: 682658836
-mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "Numbers", id: 409203825
@@ -57,6 +53,7 @@ mas "Pages", id: 409201541
 mas "Slack", id: 803453959
 mas "Telegram", id: 747648890
 mas "The Unarchiver", id: 425424353
+mas "Transporter", id: 1450874784
 mas "Unsplash Wallpapers", id: 1284863847
 mas "Xcode", id: 497799835
 vscode "aaron-bond.better-comments"
@@ -77,6 +74,7 @@ vscode "dart-code.flutter"
 vscode "davidanson.vscode-markdownlint"
 vscode "dbaeumer.vscode-eslint"
 vscode "denoland.vscode-deno"
+vscode "docker.docker"
 vscode "donjayamanne.githistory"
 vscode "dotjoshjohnson.xml"
 vscode "eamodio.gitlens"
@@ -86,6 +84,8 @@ vscode "expo.vscode-expo-tools"
 vscode "firsttris.vscode-jest-runner"
 vscode "formulahendry.auto-close-tag"
 vscode "formulahendry.auto-rename-tag"
+vscode "github.copilot"
+vscode "github.copilot-chat"
 vscode "golang.go"
 vscode "graphql.vscode-graphql"
 vscode "graphql.vscode-graphql-syntax"
