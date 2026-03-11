@@ -1,5 +1,5 @@
-# Amazon Q pre block. Keep at the top of this file.
-[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh"
+# Kiro CLI pre block. Keep at the top of this file.
+[[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh"
 
 # zsh autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -56,6 +56,9 @@ export PATH=$GOPATH/bin:$PATH
 # gvm
 [[ -s "/Users/donaldwu/.gvm/scripts/gvm" ]] && source "/Users/donaldwu/.gvm/scripts/gvm"
 
+# rust
+. "$HOME/.cargo/env"
+
 # google cloud
 if [ -f '/Users/donaldwu/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/donaldwu/google-cloud-sdk/path.zsh.inc'; fi
 if [ -f '/Users/donaldwu/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/donaldwu/google-cloud-sdk/completion.zsh.inc'; fi
@@ -70,5 +73,5 @@ alias ls="eza"
 # starship
 eval "$(starship init zsh)"
 
-# Amazon Q post block. Keep at the bottom of this file.
-[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
+# Kiro CLI post block. Keep at the bottom of this file.
+[[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh"
