@@ -26,17 +26,17 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export BUM_INSTALL="$HOME/.bum"
 export PATH="$BUM_INSTALL/bin:$PATH"
 
-# rbenv
-eval "$(rbenv init -)"
-
-# pipx
-export PATH="$PATH:/Users/yeuk.fei.wu/.local/bin"
-
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
+
+# pipx
+export PATH="$PATH:/Users/yeuk.fei.wu/.local/bin"
+
+# rbenv
+eval "$(rbenv init -)"
 
 # java
 export JAVA_HOME=`/usr/libexec/java_home`

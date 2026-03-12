@@ -26,9 +26,10 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export BUM_INSTALL="$HOME/.bum"
 export PATH="$BUM_INSTALL/bin:$PATH"
 
-# rbenv
-eval "$(rbenv init -)"
-export PATH="$HOME/.rbenv/bin:$PATH"
+# pyenv
+eval "$(pyenv init -)"
+eval "$(pyenv init --path)"
+alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
 
 # pipx
 export PATH="$PATH:/Users/donaldwu/.local/bin"
@@ -36,10 +37,9 @@ export PATH="$PATH:/Users/donaldwu/.local/bin"
 # conda
 export PATH=/opt/homebrew/anaconda3/bin:$PATH
 
-# pyenv
-eval "$(pyenv init -)"
-eval "$(pyenv init --path)"
-alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
+# rbenv
+eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/bin:$PATH"
 
 # java
 export JAVA_HOME=`/usr/libexec/java_home`
