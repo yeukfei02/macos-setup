@@ -34,9 +34,6 @@ alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
 # pipx
 export PATH="$PATH:/Users/donaldwu/.local/bin"
 
-# conda
-export PATH=/opt/homebrew/anaconda3/bin:$PATH
-
 # rbenv
 eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/bin:$PATH"
